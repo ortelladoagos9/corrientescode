@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corrientes Code</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -119,30 +121,39 @@
         </div>    
       </section>
 <!------------------------------FORM----------------------------------->
-        <span class="contact"><h4>Contacto</h4></span>
-        <div class="contact-form">
-          <form action="" method="post">
-            <span><h5>Contáctanos llenando todos los campos</h5></span>
-            <div class="container-nombre">
-              Nombre: <input type="text" name="nombre" id="nombre" placeholder="Nombre"> <br/><br/>
-            </div>
-            <div class="container-telefono">
-              Teléfono: <input type="text" name="telefono" id="telefono" placeholder="Teléfono"> <br/><br/>
-            </div>
-            <div class="container-email">
-              Correo: <input type="email" name="correo" id="correo" placeholder="Mail"> <br/><br/>
-            </div>
-            <div class="container-mensaje">
-               Mensaje: <input type="text" name="mensaje" id="mensaje"> <br/><br/>
-            </div>
-             <div class="container-enviar">
-               <input type="submit" value="Enviar" id="enviar">
-             </div>
-          </form>
+<span class="contact"><h1>Contacto</h1></span>
+<div class="contact-form">
+    <form method="post">
+        <div class="contact-title">
+           <p>Contáctanos llenando todos los campos</p>
         </div>
+        <div class="container-nombre">
+           <label for="nombre">Nombre:</label>  
+           <input type="text" name="nombre" id="nombre" class="field" placeholder="Nombre">
+        </div>
+        <div class="container-telefono">
+           <label for="telefono">Teléfono:</label>  
+           <input type="text" name="telefono" id="telefono" class="field" placeholder="Teléfono">
+           <br><br>
+        </div>
+        <div class="container-correo">
+           <label for="correo">Correo:</label>  
+           <input type="email" name="correo" id="correo" class="field" placeholder="Mail"> 
+           <br><br>
+        </div>
+        <div class="container-mensaje">
+           <label for="mensaje" class="mensaje">Mensaje:</label>
+           <textarea name="mensaje" id="mensaje" class="field"></textarea> 
+           <br><br>
+        </div>
+        <div class="container-btn">
+            <input type="submit" value="Enviar" id="enviar">
+        </div>
+    </form>
+</div>
   
-    </main>
-  </div>
+  </main>
+ </div>
 </div>
   <!-----------------------------FOOTER---------------------------------->
   <div class="main-footer">
